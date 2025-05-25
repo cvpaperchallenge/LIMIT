@@ -1,0 +1,101 @@
+{
+  "title": "Organizers",
+  "subtitle": "Meet the team behind the Machine Learning Workshop",
+  "generalChairs": [
+    {
+      "name": "Prof. Robert Wilson",
+      "affiliation": "Stanford University",
+      "bio": "Professor of Computer Science with research focus on machine learning and computer vision.",
+      "email": "example@stanford.edu",
+      "website": "#"
+    },
+    {
+      "name": "Dr. Sarah Johnson",
+      "affiliation": "Tech Corp",
+      "bio": "Chief AI Officer with expertise in applied machine learning and industry applications.",
+      "email": "example@techcorp.com",
+      "website": "#"
+    }
+  ],
+  "programChairs": [
+    {
+      "name": "Prof. Michael Chen",
+      "affiliation": "MIT",
+      "bio": "Associate Professor specializing in deep learning and neural networks.",
+      "email": "example@mit.edu",
+      "website": "#"
+    },
+    {
+      "name": "Dr. Emily Taylor",
+      "affiliation": "University of Tokyo",
+      "bio": "Research scientist focusing on computer vision and generative models.",
+      "email": "example@u-tokyo.ac.jp",
+      "website": "#"
+    },
+    {
+      "name": "Prof. David Lee",
+      "affiliation": "ETH Zurich",
+      "bio": "Professor of Computer Science with expertise in reinforcement learning and robotics.",
+      "email": "example@ethz.ch",
+      "website": "#"
+    }
+  ],
+  "webChair": [
+    {
+      "name": "Alex Martinez",
+      "affiliation": "LIMIT Lab",
+      "bio": "Web developer and researcher with experience in academic conference websites.",
+      "email": "example@limitlab.org",
+      "website": "#"
+    }
+  ],
+  "programCommittee": [
+    {
+      "name": "Dr. Amanda Brown",
+      "affiliation": "Google Research"
+    },
+    {
+      "name": "Prof. James Wilson",
+      "affiliation": "UC Berkeley"
+    },
+    {
+      "name": "Dr. Lisa Chen",
+      "affiliation": "Microsoft Research"
+    },
+    {
+      "name": "Prof. Thomas Garcia",
+      "affiliation": "University of Cambridge"
+    },
+    {
+      "name": "Dr. Sophia Kim",
+      "affiliation": "Samsung AI"
+    },
+    {
+      "name": "Prof. Mark Johnson",
+      "affiliation": "University of Toronto"
+    },
+    {
+      "name": "Dr. Rachel Singh",
+      "affiliation": "NVIDIA Research"
+    },
+    {
+      "name": "Prof. Daniel Wang",
+      "affiliation": "Tsinghua University"
+    },
+    {
+      "name": "Dr. Olivia Martinez",
+      "affiliation": "Apple AI"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "ICCV 2025"
+    },
+    {
+      "name": "LIMIT Lab"
+    },
+    {
+      "name": "Tech Corp"
+    }
+  ]
+}
