@@ -4,29 +4,29 @@
   "importantDates": [
     {
       "title": "Paper Submission Deadline",
-      "date": "July 15, 2025",
-      "description": "All submissions must be received by 11:59 PM Pacific Time (UTC-7)"
+      "date": "July 10, 2025",
+      "description": "All submissions must be received by 11:59 PM Hawaii Standard Time (HST)"
     },
     {
       "title": "Author Notification",
-      "date": "August 15, 2025",
+      "date": "August 8, 2025",
       "description": "Authors will be notified of acceptance decisions"
     },
     {
       "title": "Camera-Ready Deadline",
-      "date": "September 1, 2025",
+      "date": "August 14, 2025",
       "description": "Final versions of accepted papers must be submitted"
     },
     {
       "title": "Workshop Date",
-      "date": "October 15-16, 2025",
-      "description": "Workshop sessions at ICCV 2025 in Singapore"
+      "date": "October, 2025",
+      "description": "Workshop sessions at ICCV 2025"
     }
   ],
   "workshopProgram": {
     "day1": {
-      "date": "October 15, 2025",
-      "location": "Room A3, Convention Center",
+      "date": "TBD",
+      "location": "TBD",
       "schedule": [
         {
           "time": "9:00 - 9:15",
@@ -73,48 +73,7 @@
     "day2": {
       "date": "October 16, 2025",
       "location": "Room A3, Convention Center",
-      "schedule": [
-        {
-          "time": "9:00 - 10:00",
-          "session": "Keynote: Future Directions in ML Research",
-          "presenter": "Dr. John Doe"
-        },
-        {
-          "time": "10:00 - 10:15",
-          "session": "Coffee Break",
-          "presenter": ""
-        },
-        {
-          "time": "10:15 - 11:45",
-          "session": "Oral Session 3: Applications in Computer Vision",
-          "presenter": "Various Presenters"
-        },
-        {
-          "time": "11:45 - 13:15",
-          "session": "Lunch Break",
-          "presenter": ""
-        },
-        {
-          "time": "13:15 - 14:45",
-          "session": "Panel Discussion: Challenges and Opportunities in ML",
-          "presenter": "Industry and Academic Experts"
-        },
-        {
-          "time": "14:45 - 15:15",
-          "session": "Coffee Break",
-          "presenter": ""
-        },
-        {
-          "time": "15:15 - 16:45",
-          "session": "Oral Session 4: Emerging Techniques",
-          "presenter": "Various Presenters"
-        },
-        {
-          "time": "16:45 - 17:00",
-          "session": "Best Paper Awards and Closing Remarks",
-          "presenter": "Workshop Chairs"
-        }
-      ]
+      "schedule": []
     }
   },
   "presenterGuidelines": {

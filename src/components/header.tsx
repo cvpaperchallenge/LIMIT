@@ -14,10 +14,10 @@ import { Sheet, SheetContent, SheetTrigger, SheetClose } from "./ui/sheet";
 const navItems = [
   { name: "Home", path: "/iccv2025" },
   { name: "Call for Papers", path: "/iccv2025/call-for-papers" },
-  { name: "Schedule", path: "/iccv2025/schedule" },
+  // { name: "Schedule", path: "/iccv2025/schedule" },
   { name: "Program", path: "/iccv2025/program" },
   { name: "Organizers", path: "/iccv2025/organizers" },
-  { name: "Past Events", path: "/iccv2025/past-events" },
+  // { name: "Past Events", path: "/iccv2025/past-events" },
   { name: "Contact", path: "/iccv2025/contact" },
 ];
 

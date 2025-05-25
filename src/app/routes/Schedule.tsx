@@ -1,13 +1,13 @@
 import { Calendar, MapPin } from "lucide-react";
 
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "../../components/ui/table";
+// import {
+//   Table,
+//   TableBody,
+//   TableCell,
+//   TableHead,
+//   TableHeader,
+//   TableRow,
+// } from "../../components/ui/table";
 import {
   Accordion,
   AccordionContent,
@@ -61,7 +61,7 @@ function Schedule() {
       <section className="space-y-6">
         <div className="space-y-2">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
-            Workshop Program - Day 1
+            Workshop Program
           </h2>
           <p className="text-muted-foreground flex items-center gap-2">
             <Calendar className="h-4 w-4" />{" "}
@@ -71,7 +71,7 @@ function Schedule() {
           </p>
         </div>
         <ScrollArea className="w-[80dvw] md:w-full">
-          <Table>
+          {/* <Table>
             <TableHeader>
               <TableRow>
                 <TableHead className="w-[150px]">Time</TableHead>
@@ -92,47 +92,7 @@ function Schedule() {
                 </TableRow>
               ))}
             </TableBody>
-          </Table>
-          <ScrollBar orientation="horizontal" />
-        </ScrollArea>
-      </section>
-
-      {/* Workshop Program - Day 2 */}
-      <section className="space-y-6">
-        <div className="space-y-2">
-          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
-            Workshop Program - Day 2
-          </h2>
-          <p className="text-muted-foreground flex items-center gap-2">
-            <Calendar className="h-4 w-4" />{" "}
-            {scheduleData.workshopProgram.day2.date}
-            <MapPin className="h-4 w-4 ml-4" />{" "}
-            {scheduleData.workshopProgram.day2.location}
-          </p>
-        </div>
-        <ScrollArea className="w-[80dvw] md:w-full">
-          <Table>
-            <TableHeader>
-              <TableRow>
-                <TableHead className="w-[150px]">Time</TableHead>
-                <TableHead>Session</TableHead>
-                <TableHead className="hidden md:table-cell">
-                  Presenter
-                </TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {scheduleData.workshopProgram.day2.schedule.map((item, index) => (
-                <TableRow key={index}>
-                  <TableCell className="font-medium">{item.time}</TableCell>
-                  <TableCell>{item.session}</TableCell>
-                  <TableCell className="hidden md:table-cell">
-                    {item.presenter}
-                  </TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
+          </Table> */}
           <ScrollBar orientation="horizontal" />
         </ScrollArea>
       </section>

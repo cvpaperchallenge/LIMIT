@@ -1,20 +1,83 @@
 {
-  "title": "Organizers",
+  "title": "Organizing Team & Supporters",
   "subtitle": "Meet the team behind the Machine Learning Workshop",
-  "generalChairs": [
+  "organizers": [
     {
-      "name": "Prof. Robert Wilson",
-      "affiliation": "Stanford University",
-      "bio": "Professor of Computer Science with research focus on machine learning and computer vision.",
-      "email": "example@stanford.edu",
-      "website": "#"
+      "name": "Hirokatsu Kataoka",
+      "affiliation": "AIST / Oxford VGG",
+      "photo": "/organizers/hirokatsu.kataoka.png",
+      "bio": "",
+      "website": "https://hirokatsukataoka.net/"
     },
     {
-      "name": "Dr. Sarah Johnson",
-      "affiliation": "Tech Corp",
-      "bio": "Chief AI Officer with expertise in applied machine learning and industry applications.",
-      "email": "example@techcorp.com",
-      "website": "#"
+      "name": "Yuki M. Asano",
+      "affiliation": "University of Technology Nuremberg (UTN)",
+      "photo": "/organizers/yuki.asano.png",
+      "bio": "",
+      "website": "https://yukimasano.github.io"
+    },
+    {
+      "name": "Iro Laina",
+      "affiliation": "Oxford VGG",
+      "photo": "/organizers/iro.laina.png",
+      "bio": "",
+      "website": "https://scholar.google.de/citations?user=n9nXAPcAAAAJ"
+    },
+    {
+      "name": "Rio Yokota",
+      "affiliation": "Institute of Science Tokyo",
+      "photo": "/organizers/rio.yokota.png",
+      "bio": "",
+      "website": "https://scholar.google.com/citations?user=MLaytfkAAAAJ"
+    },
+    {
+      "name": "Nakamasa Inoue",
+      "affiliation": "Institute of Science Tokyo",
+      "photo": "/organizers/nakamasa.inoue.png",
+      "bio": "",
+      "website": "https://mmai.tech/"
+    },
+    {
+      "name": "Rintaro Yanagi",
+      "affiliation": "AIST",
+      "photo": "/organizers/rintaro.yanagi.png",
+      "bio": "",
+      "website": "https://scholar.google.com/citations?user=4dA9-SoAAAAJ"
+    },
+    {
+      "name": "Partha Das",
+      "affiliation": "University of Amsterdam",
+      "photo": "/organizers/partha.das.png",
+      "bio": "",
+      "website": "https://morpheus3000.github.io"
+    },
+    {
+      "name": "Connor Anderson",
+      "affiliation": "Kitware",
+      "photo": "/organizers/connor.anderson.png",
+      "bio": "",
+      "website": "https://scholar.google.com/citations?user=UEKWqIoAAAAJ"
+    },
+    {
+      "name": "Ryousuke Yamada",
+      "affiliation": "AIST",
+      "photo": "/organizers/ryousuke.yamada.png",
+      "bio": "",
+      "website": "https://ryosuke-yamada.github.io"
+    },
+    {
+      "name": "Daichi Otsuka",
+      "affiliation": "AIST",
+      "photo": "/organizers/daichi.otsuka.png",
+      "bio": "",
+      "website": "https://sites.google.com/view/otsuka-profile"
+    },
+    {
+      "name": "Yoshihiro Fukuhara",
+      "affiliation": "AIST / Waseda University",
+      "photo": "/organizers/yoshihiro.fukuhara.png",
+      "bio": "",
+      "website": "https://gatheluck.net"
     }
   ],
   "programChairs": [
@@ -90,12 +153,6 @@
   "sponsors": [
     {
       "name": "ICCV 2025"
-    },
-    {
-      "name": "LIMIT Lab"
-    },
-    {
-      "name": "Tech Corp"
     }
   ]
 }

@@ -1,17 +1,17 @@
 {
-  "title": "Machine Learning Workshop 2025",
-  "subtitle": "Advancing the Future of Machine Learning Research",
+  "title": "Representation Learning with Very Limited Resources: When Data, Modalities, Labels, and Computing Resources are Scarce",
+  "subtitle": "ICCV 2025 Workshop",
   "eventInfo": {
-    "date": "October 15-16, 2025",
-    "location": "Singapore (ICCV 2025)"
+    "date": "October, 2025",
+    "location": "Honolulu, Hawaii"
   },
   "overview": {
     "mission": "This workshop aims to bring together researchers and practitioners in the field of machine learning to discuss the latest advances and challenges in computer vision applications. We focus on innovative approaches, emerging techniques, and real-world implementations.",
     "keyTopics": [
-      "Deep learning architectures for computer vision",
-      "Generative models and diffusion techniques",
-      "Self-supervised and unsupervised learning",
-      "Efficient and scalable ML systems",
+      "Recognition, generation, reconstruction, any visual/multi-modal tasks in limited situations",
+      "{Self, Semi, Weakly, Un}-supervised learning with very limited resources",
+      "{Zero, One, Few}-shot learning with very limited resources",
+      "Training convnets, transformers, diffusion, foundation models, and any other models with relatively fewer resources",
       "Applications in healthcare, robotics, and autonomous systems"
     ]
   },
@@ -35,14 +35,9 @@
   ],
   "latestNews": [
     {
-      "title": "Call for Papers Now Open",
+      "title": "Workshop page open",
       "date": "June 1, 2025",
-      "content": "We are excited to announce that the call for papers for our workshop is now open. We invite submissions on a wide range of topics related to machine learning and computer vision."
-    },
-    {
-      "title": "Keynote Speakers Announced",
-      "date": "May 15, 2025",
-      "content": "We are pleased to announce our keynote speakers for the workshop. Join us to hear from leading experts in the field of machine learning and computer vision."
+      "content": "We are excited to announce that our workshop page is now live. We will continue to add information, so please check back regularly for updates."
     }
   ]
 }

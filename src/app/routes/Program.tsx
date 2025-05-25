@@ -1,28 +1,28 @@
-import { ExternalLink, FileText, Video } from "lucide-react";
+// import { ExternalLink, FileText, Video } from "lucide-react";
 
-import { Button } from "../../components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "../../components/ui/card";
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "../../components/ui/tabs";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "../../components/ui/table";
+// import { Button } from "../../components/ui/button";
+// import {
+//   Card,
+//   CardContent,
+//   CardDescription,
+//   CardFooter,
+//   CardHeader,
+//   CardTitle,
+// } from "../../components/ui/card";
+// import {
+//   Tabs,
+//   TabsContent,
+//   TabsList,
+//   TabsTrigger,
+// } from "../../components/ui/tabs";
+// import {
+//   Table,
+//   TableBody,
+//   TableCell,
+//   TableHead,
+//   TableHeader,
+//   TableRow,
+// } from "../../components/ui/table";
 import programData from "../../data/program.json";
 
 function Program() {
@@ -30,16 +30,28 @@ function Program() {
     <main className="container px-6 py-8 space-y-12 xl:w-6xl">
       {/* Header */}
       <section className="space-y-4 text-center">
-        <h1 className="text-3xl sm:text-4xl font-bold tracking-tighter">
+        <h1 className="text-3xl sm:text-4xl tracking-tighter">
           {programData.title}
         </h1>
-        <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+        {/* <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
           {programData.subtitle}
-        </p>
+        </p> */}
+      </section>
+
+      {/* Submission Section */}
+      <section className="space-y-6">
+        <div className="rounded-lg border bg-card p-6">
+          <div className="space-y-4">
+            <p>
+              The workshop program is currently being prepared and will be made
+              available shortly.
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* Keynote Speakers */}
-      <section className="space-y-6">
+      {/* <section className="space-y-6">
         <div className="space-y-2">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
             Keynote Speakers
@@ -74,10 +86,10 @@ function Program() {
             </Card>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Accepted Papers */}
-      <section className="space-y-6">
+      {/* <section className="space-y-6">
         <div className="space-y-2">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
             Accepted Papers
@@ -188,10 +200,10 @@ function Program() {
             </TabsContent>
           </Tabs>
         </div>
-      </section>
+      </section> */}
 
       {/* Panel Discussion */}
-      <section className="space-y-6">
+      {/* <section className="space-y-6">
         <div className="space-y-2">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
             Panel Discussion
@@ -223,10 +235,10 @@ function Program() {
             </div>
           </CardContent>
         </Card>
-      </section>
+      </section> */}
 
       {/* Session Structure */}
-      <section className="space-y-6">
+      {/* <section className="space-y-6">
         <div className="space-y-2">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
             Session Structure
@@ -255,7 +267,7 @@ function Program() {
             </Card>
           ))}
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }
