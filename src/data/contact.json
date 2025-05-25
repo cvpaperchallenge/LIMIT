@@ -6,30 +6,13 @@
       "type": "Email",
       "icon": "Mail",
       "description": "For general inquiries, please contact us at:",
-      "value": "contact@mlworkshop.org"
+      "value": "hirokatsu.kataoka[at]aist.go.jp"
     },
     {
       "type": "Location",
       "icon": "MapPin",
       "description": "The workshop will be held at:",
-      "value": "Singapore Convention Center\nICCV 2025, October 15-16, 2025"
-    },
-    {
-      "type": "Community",
-      "icon": "SiSlack",
-      "description": "Join our community channels:",
-      "socialLinks": [
-        {
-          "name": "X",
-          "icon": "X",
-          "url": "#"
-        },
-        {
-          "name": "Slack",
-          "icon": "SiSlack",
-          "url": "#"
-        }
-      ]
+      "value": "TBD"
     }
   ],
   "contactForm": {

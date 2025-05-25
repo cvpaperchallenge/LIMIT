@@ -1,26 +1,55 @@
 import { Link } from "react-router";
-import { Download, ExternalLink } from "lucide-react";
+import { Download } from "lucide-react";
+import { Calendar } from "lucide-react";
 
 import { Button } from "../../components/ui/button";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "../../components/ui/accordion";
+// import {
+//   Accordion,
+//   AccordionContent,
+//   AccordionItem,
+//   AccordionTrigger,
+// } from "../../components/ui/accordion";
 import callForPapersData from "../../data/callForPapers.json";
+import scheduleData from "../../data/schedule.json";
 
 function CallForPapers() {
   return (
     <main className="container px-6 py-8 space-y-12 xl:w-6xl">
       {/* Header */}
       <section className="space-y-4 text-center">
-        <h1 className="text-3xl sm:text-4xl font-bold tracking-tighter">
+        <h1 className="text-3xl sm:text-4xl tracking-tighter">
           {callForPapersData.title}
         </h1>
-        <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+        {/* <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
           {callForPapersData.subtitle}
-        </p>
+        </p> */}
+      </section>
+
+      {/* Important Dates Timeline */}
+      <section className="space-y-6">
+        <div className="space-y-2">
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
+            Important Dates
+          </h2>
+          {/* <p className="text-muted-foreground">
+            Key deadlines for your calendar
+          </p> */}
+        </div>
+        <div className="relative border-l border-border pl-6 space-y-8">
+          {scheduleData.importantDates.map((date, index) => (
+            <div key={index} className="relative">
+              <div className="absolute -left-[32px] mt-1 h-4 w-4 rounded-full bg-primary"></div>
+              <div className="space-y-1">
+                <h3 className="font-semibold">{date.title}</h3>
+                <p className="text-muted-foreground flex items-center gap-2">
+                  <Calendar className="h-4 w-4" />
+                  {date.date}
+                </p>
+                <p className="text-sm">{date.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* Topics Section */}
@@ -29,11 +58,16 @@ function CallForPapers() {
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
             Topics of Interest
           </h2>
-          <p className="text-muted-foreground">
-            We welcome submissions on the following topics (but not limited to):
-          </p>
+          <p>We welcome submissions on the following topics:</p>
+          <div className="space-y-2">
+            <ul className="list-disc pl-5 space-y-1">
+              {callForPapersData.topics.coreMLTechniques.map((topic, index) => (
+                <li key={index}>{topic}</li>
+              ))}
+            </ul>
+          </div>
         </div>
-        <div className="grid gap-4 md:grid-cols-2">
+        {/* <div className="grid gap-4 md:grid-cols-2">
           <div className="space-y-2">
             <h3 className="text-lg sm:text-xl font-semibold">
               Core ML Techniques
@@ -54,20 +88,37 @@ function CallForPapers() {
               )}
             </ul>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* Paper Format Section */}
       <section className="space-y-6">
         <div className="space-y-2">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
-            Paper Format
+            Submission Guidelines
           </h2>
-          <p className="text-muted-foreground">
-            Guidelines for preparing and submitting your paper
-          </p>
+          <p>All submissions must follow the following guidelines:</p>
+          <ul className="list-disc pl-5 space-y-2">
+            {callForPapersData.paperFormat.submissionGuidelines.map(
+              (guideline, index) => (
+                <li key={index}>{guideline}</li>
+              ),
+            )}
+          </ul>
+          <div className="flex gap-4 pt-2">
+            <Button variant="outline" className="flex gap-2" asChild>
+              <a
+                href="https://media.eventhosts.cc/Conferences/ICCV2025/ICCV2025-Author-Kit-Feb.zip"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Download className="h-4 w-4" />
+                Download ICCV 2025 Template
+              </a>
+            </Button>
+          </div>
         </div>
-        <div className="grid gap-6 md:grid-cols-2">
+        {/* <div className="grid gap-6 md:grid-cols-2">
           <div className="space-y-4">
             <h3 className="text-lg sm:text-xl font-semibold">
               Submission Guidelines
@@ -94,7 +145,7 @@ function CallForPapers() {
             <h3 className="text-lg sm:text-xl font-semibold">Publication</h3>
             <p>{callForPapersData.paperFormat.publication}</p>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* Submission Section */}
@@ -103,26 +154,24 @@ function CallForPapers() {
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
             How to Submit
           </h2>
-          <p className="text-muted-foreground">
-            Submit your paper through our OpenReview portal
-          </p>
+          <p>Submit your paper through our Microsoft MCT submission website.</p>
         </div>
         <div className="rounded-lg border bg-card p-6">
           <div className="space-y-4">
             <p>{callForPapersData.submission.description}</p>
-            <div className="flex justify-center">
+            {/* <div className="flex justify-center">
               <Button className="flex gap-2" asChild>
                 <a href="#" target="_blank" rel="noreferrer">
                   Submit Paper <ExternalLink className="h-4 w-4" />
                 </a>
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
 
       {/* Best Paper Awards */}
-      <section className="space-y-6">
+      {/* <section className="space-y-6">
         <div className="space-y-2">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
             Best Paper Awards
@@ -134,10 +183,10 @@ function CallForPapers() {
         <div className="rounded-lg border bg-card p-6">
           <p>{callForPapersData.bestPaperAwards}</p>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
-      <section className="space-y-6">
+      {/* <section className="space-y-6">
         <div className="space-y-2">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
             Frequently Asked Questions
@@ -154,7 +203,7 @@ function CallForPapers() {
             </AccordionItem>
           ))}
         </Accordion>
-      </section>
+      </section> */}
 
       {/* Contact Section */}
       <section className="space-y-6">
@@ -167,11 +216,9 @@ function CallForPapers() {
             contact us
           </p>
         </div>
-        <div className="flex justify-center">
-          <Button variant="outline" asChild>
-            <Link to="/iccv2025/contact">Contact Us</Link>
-          </Button>
-        </div>
+        <Button variant="outline" asChild>
+          <Link to="/iccv2025/contact">Contact Us</Link>
+        </Button>
       </section>
     </main>
   );

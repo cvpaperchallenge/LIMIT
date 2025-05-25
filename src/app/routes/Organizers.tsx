@@ -1,4 +1,4 @@
-import { Mail, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 import { Button } from "../../components/ui/button";
 import {
@@ -16,26 +16,26 @@ function Organizers() {
     <main className="container px-6 py-8 space-y-12 xl:w-6xl">
       {/* Header */}
       <section className="space-y-4 text-center">
-        <h1 className="text-3xl sm:text-4xl font-bold tracking-tighter">
+        <h1 className="text-3xl sm:text-4xl tracking-tighter">
           {organizersData.title}
         </h1>
-        <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+        {/* <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
           {organizersData.subtitle}
-        </p>
+        </p> */}
       </section>
 
       {/* General Chairs */}
       <section className="space-y-6">
         <div className="space-y-2">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
-            General Chairs
+            Organizers
           </h2>
-          <p className="text-muted-foreground">
+          {/* <p className="text-muted-foreground">
             Workshop organization and coordination
-          </p>
+          </p> */}
         </div>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {organizersData.generalChairs.map((chair, index) => (
+          {organizersData.organizers.map((chair, index) => (
             <Card key={index}>
               <CardHeader>
                 <CardTitle>{chair.name}</CardTitle>
@@ -46,11 +46,11 @@ function Organizers() {
                   <div className="aspect-square bg-muted rounded-md flex items-center justify-center">
                     <span className="text-muted-foreground">Photo</span>
                   </div>
-                  <p className="text-sm text-muted-foreground">{chair.bio}</p>
+                  {/* <p className="text-sm text-muted-foreground">{chair.bio}</p> */}
                 </div>
               </CardContent>
               <CardFooter className="flex justify-between">
-                <Button
+                {/* <Button
                   variant="outline"
                   size="sm"
                   className="flex gap-2"
@@ -59,7 +59,7 @@ function Organizers() {
                   <a href={`mailto:${chair.email}`}>
                     <Mail className="h-4 w-4" /> Email
                   </a>
-                </Button>
+                </Button> */}
                 <Button
                   variant="outline"
                   size="sm"
@@ -77,7 +77,7 @@ function Organizers() {
       </section>
 
       {/* Program Chairs */}
-      <section className="space-y-6">
+      {/* <section className="space-y-6">
         <div className="space-y-2">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
             Program Chairs
@@ -126,10 +126,10 @@ function Organizers() {
             </Card>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Web Chair */}
-      <section className="space-y-6">
+      {/* <section className="space-y-6">
         <div className="space-y-2">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
             Web Chair
@@ -178,10 +178,10 @@ function Organizers() {
             </Card>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Program Committee */}
-      <section className="space-y-6">
+      {/* <section className="space-y-6">
         <div className="space-y-2">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
             Program Committee
@@ -200,19 +200,17 @@ function Organizers() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Sponsors */}
       <section className="space-y-6">
         <div className="space-y-2">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
-            Sponsors
+            Supporters
           </h2>
-          <p className="text-muted-foreground">
-            Organizations supporting the workshop
-          </p>
+          <p className="text-muted-foreground">TBD</p>
         </div>
-        <div className="grid gap-6 md:grid-cols-3">
+        {/* <div className="grid gap-6 md:grid-cols-3">
           {organizersData.sponsors.map((sponsor, index) => (
             <div
               key={index}
@@ -223,7 +221,7 @@ function Organizers() {
               </span>
             </div>
           ))}
-        </div>
+        </div> */}
       </section>
     </main>
   );

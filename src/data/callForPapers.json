@@ -1,14 +1,17 @@
 {
   "title": "Call for Papers",
-  "subtitle": "Submit your research to the Machine Learning Workshop at ICCV 2025",
+  "subtitle": "Submit your research to the LIMIT Workshop",
   "topics": {
     "coreMLTechniques": [
-      "Deep learning architectures",
-      "Generative models",
-      "Self-supervised learning",
-      "Few-shot and zero-shot learning",
-      "Reinforcement learning",
-      "Neural rendering"
+      "Recognition, generation, reconstruction, any visual/multi-modal tasks in limited situations",
+      "{Self, Semi, Weakly, Un}-supervised learning with very limited resources",
+      "{Zero, One, Few}-shot learning with very limited resources",
+      "Training convnets, transformers, diffusion, foundation models, and any other models with relatively fewer resources",
+      "Synthetic training with procedural, artificially generated images, and any generation rules",
+      "Model training from generative models and/or formula-generated data",
+      "Vision+X and multi-modality to accelerate a learning efficiency",
+      "New datasets, benchmarks, and meta analysis under the philosophy of limited-resource settings",
+      "Brave new ideas related to above-mentioned topics or create a novel field"
     ],
     "applications": [
       "Computer vision",
@@ -21,17 +24,16 @@
   },
   "paperFormat": {
     "submissionGuidelines": [
-      "Papers must be submitted in PDF format",
-      "Maximum 8 pages (excluding references and appendices)",
-      "Use the ICCV 2025 template",
-      "Submissions must be anonymous",
-      "Supplementary material is allowed"
+      "Submissions must be handled electronically via the Microsoft MCT submission website",
+      "Submissions must be anonymized",
+      "Formatted according to ICCV 2025 template",
+      "Maximum 8 pages excluding references and appendices (4-8 pages are recommend)"
     ],
     "reviewProcess": "All submissions will undergo a double-blind peer review process. Each paper will be reviewed by at least three reviewers from our program committee. Accepted papers will be presented at the workshop and included in the proceedings.",
     "publication": "Accepted papers will be published in the ICCV 2025 Workshop Proceedings and will be available on IEEE Xplore and CVF Open Access."
   },
   "submission": {
-    "description": "All submissions must be made through the OpenReview submission system. Please ensure that your submission adheres to the formatting guidelines and anonymity requirements."
+    "description": "The Microsoft CMT submission website is currently being prepared and will be made available shortly."
   },
   "bestPaperAwards": "We will present Best Paper and Best Student Paper awards to recognize outstanding contributions. Award winners will receive certificates and will be highlighted during the workshop.",
   "faq": [
