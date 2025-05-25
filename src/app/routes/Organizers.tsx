@@ -44,7 +44,12 @@ function Organizers() {
               <CardContent>
                 <div className="space-y-4">
                   <div className="aspect-square bg-muted rounded-md flex items-center justify-center">
-                    <span className="text-muted-foreground">Photo</span>
+                    <img
+                      src={chair.photo}
+                      alt={`Photo of ${chair.name}`}
+                      className="object-cover w-full h-full"
+                      loading="lazy"
+                    />
                   </div>
                   {/* <p className="text-sm text-muted-foreground">{chair.bio}</p> */}
                 </div>
