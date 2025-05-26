@@ -1,6 +1,7 @@
 name: deploy-to-github-pages
 permissions:
   contents: read
+  actions: read
   pages: write
   id-token: write
 on:
@@ -50,7 +51,7 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
           name: github-pages
           path: ./build/client
@@ -66,4 +67,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
