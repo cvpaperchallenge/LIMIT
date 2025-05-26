@@ -28,10 +28,10 @@ function Home() {
         </div>
         <div className="flex flex-col sm:flex-row gap-4">
           <Button asChild size="lg">
-            <Link to="/iccv2025/call-for-papers">Submit Paper</Link>
+            <Link to="/call-for-papers">Submit Paper</Link>
           </Button>
           <Button variant="outline" size="lg" asChild>
-            <Link to="/iccv2025/program">Check Program</Link>
+            <Link to="/program">Check Program</Link>
           </Button>
         </div>
       </section>

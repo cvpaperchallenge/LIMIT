@@ -10,7 +10,7 @@ export function Footer() {
       <div className="container grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         {/* Logo and Workshop Name */}
         <div className="flex flex-col gap-2">
-          <Link to="/iccv2025" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2">
             <span className="font-bold text-lg">LIMIT Workshop</span>
           </Link>
           <p className="text-sm text-muted-foreground">ICCV 2025</p>
@@ -111,25 +111,25 @@ export function Footer() {
         <div className="flex flex-col gap-2">
           <h3 className="font-medium">Links</h3>
           <Link
-            to="/iccv2025"
+            to="/"
             className="text-sm text-muted-foreground hover:text-foreground"
           >
             Home
           </Link>
           <Link
-            to="/iccv2025/call-for-papers"
+            to="/call-for-papers"
             className="text-sm text-muted-foreground hover:text-foreground"
           >
             Call for Papers
           </Link>
           <Link
-            to="/iccv2025/program"
+            to="/program"
             className="text-sm text-muted-foreground hover:text-foreground"
           >
             Program
           </Link>
           <Link
-            to="/iccv2025/contact"
+            to="/contact"
             className="text-sm text-muted-foreground hover:text-foreground"
           >
             Contact

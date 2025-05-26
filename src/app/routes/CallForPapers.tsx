@@ -217,7 +217,7 @@ function CallForPapers() {
           </p>
         </div>
         <Button variant="outline" asChild>
-          <Link to="/iccv2025/contact">Contact Us</Link>
+          <Link to="/contact">Contact Us</Link>
         </Button>
       </section>
     </main>
