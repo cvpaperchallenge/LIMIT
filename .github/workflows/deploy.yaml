@@ -39,7 +39,7 @@ jobs:
         working-directory: ${{ env.DOCKER_COMPOSE_DIRECTORY }}
 
       - name: Build
-        run: docker compose exec -e NODE_ENV=production -T frontend yarn build
+        run: docker compose exec -T frontend yarn build
         working-directory: ${{ env.DOCKER_COMPOSE_DIRECTORY }}
 
       - name: Stop container
