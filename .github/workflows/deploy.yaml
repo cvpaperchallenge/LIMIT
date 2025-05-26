@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: deploy-to-github-pages
 permissions:
   contents: read
   pages: write
@@ -54,15 +54,15 @@ jobs:
         with:
           path: ./build/client
 
-    deploy:
-      needs: build
-      runs-on: ubuntu-latest
-      timeout-minutes: 15
-      environment:
-        name: github-pages
-        url: ${{ steps.deployment.outputs.page_url }}
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
-      steps:
-        - name: Deploy to GitHub Pages
-          id: deployment
-          uses: actions/deploy-pages@v2
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
