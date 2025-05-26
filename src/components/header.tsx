@@ -12,13 +12,13 @@ import {
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "./ui/sheet";
 
 const navItems = [
-  { name: "Home", path: "/iccv2025" },
-  { name: "Call for Papers", path: "/iccv2025/call-for-papers" },
-  // { name: "Schedule", path: "/iccv2025/schedule" },
-  { name: "Program", path: "/iccv2025/program" },
-  { name: "Organizers", path: "/iccv2025/organizers" },
-  // { name: "Past Events", path: "/iccv2025/past-events" },
-  { name: "Contact", path: "/iccv2025/contact" },
+  { name: "Home", path: "/" },
+  { name: "Call for Papers", path: "/call-for-papers" },
+  // { name: "Schedule", path: "/schedule" },
+  { name: "Program", path: "/program" },
+  { name: "Organizers", path: "/organizers" },
+  // { name: "Past Events", path: "/past-events" },
+  { name: "Contact", path: "/contact" },
 ];
 
 export function Header() {
@@ -26,7 +26,7 @@ export function Header() {
     <header className="top-0 z-50 w-full border-b border-border bg-header-background/70 backdrop-blur-md flex justify-center">
       <div className="container flex h-16 items-center justify-between px-5">
         <div className="flex items-center gap-2">
-          <Link to="/iccv2025" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2">
             <span className="font-bold text-xl">LIMIT 2025</span>
           </Link>
         </div>
