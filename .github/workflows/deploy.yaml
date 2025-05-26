@@ -1,5 +1,8 @@
 name: Deploy to GitHub Pages
-permissions: {}
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 on:
   workflow_dispatch:
 concurrency:
@@ -10,8 +13,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 15
-    permissions:
-      contents: read
     env:
       DOCKER_COMPOSE_DIRECTORY: environments/ci
 
@@ -57,10 +58,6 @@ jobs:
       needs: build
       runs-on: ubuntu-latest
       timeout-minutes: 15
-      permissions:
-        contents: read
-        pages: write
-        id-token: write
       environment:
         name: github-pages
         url: ${{ steps.deployment.outputs.page_url }}
