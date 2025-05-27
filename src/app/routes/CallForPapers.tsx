@@ -154,7 +154,7 @@ function CallForPapers() {
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
             How to Submit
           </h2>
-          <p>Submit your paper through our Microsoft MCT submission website.</p>
+          <p>Submit your paper through our OpenReview submission website.</p>
         </div>
         <div className="rounded-lg border bg-card p-6">
           <div className="space-y-4">
