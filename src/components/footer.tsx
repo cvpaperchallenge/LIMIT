@@ -37,6 +37,12 @@ export function Footer() {
         <div className="flex flex-col gap-2">
           <h3 className="font-medium">Related Workshops</h3>
           <Link
+            to="https://iccv2025-found-workshop.limitlab.xyz"
+            className="text-sm text-muted-foreground hover:text-foreground"
+          >
+            ICCV 2025 FOUND
+          </Link>
+          <Link
             to="https://sslwin.org"
             className="text-sm text-muted-foreground hover:text-foreground"
           >
