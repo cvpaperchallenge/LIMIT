@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import { Download } from "lucide-react";
 import { Calendar } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 import { Button } from "../../components/ui/button";
 // import {
@@ -154,20 +155,34 @@ function CallForPapers() {
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
             How to Submit
           </h2>
-          <p>Submit your paper through our OpenReview submission website.</p>
-        </div>
-        <div className="rounded-lg border bg-card p-6">
-          <div className="space-y-4">
-            <p>{callForPapersData.submission.description}</p>
-            {/* <div className="flex justify-center">
-              <Button className="flex gap-2" asChild>
-                <a href="#" target="_blank" rel="noreferrer">
-                  Submit Paper <ExternalLink className="h-4 w-4" />
-                </a>
-              </Button>
-            </div> */}
+          <p>
+            Please submit your paper through our OpenReview submission website.
+          </p>
+          <div className="flex gap-4 pt-2">
+            <Button className="flex gap-2" asChild>
+              <a
+                href="https://openreview.net/group?id=thecvf.com/ICCV/2025/Workshop/LIMIT#tab-your-consoles"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Submit Paper from OpenReview
+                <ExternalLink className="h-4 w-4" />
+              </a>
+            </Button>
           </div>
         </div>
+        {/* <div className="rounded-lg border bg-card p-6">
+          <div className="space-y-4">
+          <p>{callForPapersData.submission.description}</p>
+          <div className="flex justify-center">
+          <Button className="flex gap-2" asChild>
+          <a href="#" target="_blank" rel="noreferrer">
+          Submit Paper <ExternalLink className="h-4 w-4" />
+          </a>
+          </Button>
+          </div>
+          </div>
+          </div> */}
       </section>
 
       {/* Best Paper Awards */}
@@ -211,7 +226,7 @@ function CallForPapers() {
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
             Questions?
           </h2>
-          <p className="text-muted-foreground">
+          <p>
             If you have any questions about the submission process, please
             contact us
           </p>
