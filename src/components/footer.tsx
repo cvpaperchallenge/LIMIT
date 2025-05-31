@@ -4,17 +4,20 @@ import { Link } from "react-router";
 
 // import { Button } from "./ui/button";
 
+import whiteLimitLabLogoWide from "../../public/limit-logo-white-wide.png";
+import blackLimitLabLogoWide from "../../public/limit-logo-black-wide.png";
+
 export function Footer() {
   return (
     <footer className="w-full border-t bg-footer-background/70 py-6 md:py-10 px-6 flex-col justify-items-center">
       <div className="container grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         {/* Logo and Workshop Name */}
-        <div className="flex flex-col gap-2">
+        {/* <div className="flex flex-col gap-2">
           <Link to="/" className="flex items-center space-x-2">
             <span className="font-bold text-lg">LIMIT Workshop</span>
           </Link>
           <p className="text-sm text-muted-foreground">ICCV 2025</p>
-        </div>
+        </div> */}
 
         {/* Past LIMIT Workshop */}
         <div className="flex flex-col gap-2">
@@ -146,6 +149,21 @@ export function Footer() {
       {/* Credits */}
       <div className="container mt-8 border-t pt-4">
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
+          <Link to="/" className="flex items-center space-x-2">
+            {/* <span className="font-bold text-lg">LIMIT Workshop</span> */}
+            <img
+              src={blackLimitLabLogoWide}
+              alt="LIMIT Workshop logo"
+              className="object-contain h-16 w-auto dark:hidden"
+              loading="lazy"
+            />
+            <img
+              src={whiteLimitLabLogoWide}
+              alt="LIMIT Workshop logo"
+              className="object-contain h-16 w-auto hidden dark:block"
+              loading="lazy"
+            />
+          </Link>
           <p className="text-center text-sm text-muted-foreground md:text-left">
             &copy; {new Date().getFullYear()} LIMIT Workshop. All rights
             reserved.
