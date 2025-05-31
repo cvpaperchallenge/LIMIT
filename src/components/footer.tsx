@@ -153,13 +153,13 @@ export function Footer() {
             {/* <span className="font-bold text-lg">LIMIT Workshop</span> */}
             <img
               src={blackLimitLabLogoWide}
-              alt="limit worhshop logo"
+              alt="LIMIT Workshop logo"
               className="object-contain h-16 w-auto dark:hidden"
               loading="lazy"
             />
             <img
               src={whiteLimitLabLogoWide}
-              alt="limit worhshop logo"
+              alt="LIMIT Workshop logo"
               className="object-contain h-16 w-auto hidden dark:block"
               loading="lazy"
             />
