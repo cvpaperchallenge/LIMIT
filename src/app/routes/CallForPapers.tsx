@@ -107,8 +107,7 @@ function CallForPapers() {
             )}
           </ul>
           <p>
-            Submission in accepted papers will be included in the official ICCV
-            proceedings.
+            Accepted papers will be included in the official ICCV proceedings.
           </p>
           <div className="flex gap-4 pt-2">
             <Button variant="outline" className="flex gap-2" asChild>
