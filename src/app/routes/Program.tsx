@@ -1,28 +1,15 @@
-// import { ExternalLink, FileText, Video } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
-// import { Button } from "../../components/ui/button";
-// import {
-//   Card,
-//   CardContent,
-//   CardDescription,
-//   CardFooter,
-//   CardHeader,
-//   CardTitle,
-// } from "../../components/ui/card";
-// import {
-//   Tabs,
-//   TabsContent,
-//   TabsList,
-//   TabsTrigger,
-// } from "../../components/ui/tabs";
-// import {
-//   Table,
-//   TableBody,
-//   TableCell,
-//   TableHead,
-//   TableHeader,
-//   TableRow,
-// } from "../../components/ui/table";
+import { Button } from "../../components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "../../components/ui/card";
+
 import programData from "../../data/program.json";
 
 function Program() {
@@ -39,7 +26,7 @@ function Program() {
       </section>
 
       {/* Submission Section */}
-      <section className="space-y-6">
+      {/* <section className="space-y-6">
         <div className="rounded-lg border bg-card p-6">
           <div className="space-y-4">
             <p>
@@ -48,20 +35,20 @@ function Program() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Keynote Speakers */}
-      {/* <section className="space-y-6">
+      <section className="space-y-6">
         <div className="space-y-2">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
-            Keynote Speakers
+            Invited Speakers
           </h2>
-          <p className="text-muted-foreground">
+          {/* <p className="text-muted-foreground">
             Distinguished researchers and industry leaders
-          </p>
+          </p> */}
         </div>
         <div className="grid gap-6 md:grid-cols-2">
-          {programData.keynoteSpeakers.map((speaker, index) => (
+          {programData.invitedSpeakers.map((speaker, index) => (
             <Card key={index}>
               <CardHeader>
                 <CardTitle>{speaker.name}</CardTitle>
@@ -69,16 +56,27 @@ function Program() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  <div className="aspect-video bg-muted rounded-md flex items-center justify-center">
-                    <span className="text-muted-foreground">Speaker Photo</span>
+                  <div className="aspect-square bg-muted rounded-md flex items-center justify-center">
+                    {/* <span className="text-muted-foreground">Speaker Photo</span> */}
+                    <img
+                      src={speaker.photo}
+                      alt={`Photo of ${speaker.name}`}
+                      className="object-cover w-full h-full"
+                      loading="lazy"
+                    />
                   </div>
-                  <h3 className="font-semibold">{speaker.title}</h3>
-                  <p className="text-sm text-muted-foreground">{speaker.bio}</p>
+                  {/* <h3 className="font-semibold">{speaker.title}</h3>
+                  <p className="text-sm text-muted-foreground">{speaker.bio}</p> */}
                 </div>
               </CardContent>
               <CardFooter>
-                <Button variant="outline" size="sm" className="w-full" asChild>
-                  <a href="#" target="_blank" rel="noreferrer">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="flex gap-2"
+                  asChild
+                >
+                  <a href={speaker.website} target="_blank" rel="noreferrer">
                     View Profile <ExternalLink className="ml-2 h-3 w-3" />
                   </a>
                 </Button>
@@ -86,7 +84,7 @@ function Program() {
             </Card>
           ))}
         </div>
-      </section> */}
+      </section>
 
       {/* Accepted Papers */}
       {/* <section className="space-y-6">

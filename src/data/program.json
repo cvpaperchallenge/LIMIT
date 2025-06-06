@@ -1,18 +1,38 @@
 {
   "title": "Program",
   "subtitle": "Accepted papers, keynote speakers, and panel discussions",
-  "keynoteSpeakers": [
+  "invitedSpeakers": [
     {
-      "name": "Prof. Jane Smith",
-      "affiliation": "Stanford University",
-      "title": "Advances in Machine Learning for Computer Vision",
-      "bio": "This keynote will explore recent breakthroughs in machine learning techniques for computer vision tasks, with a focus on self-supervised learning approaches and their applications in real-world scenarios."
+      "name": "Yonglong Tian",
+      "affiliation": "OpenAI",
+      "photo": "/program/yonglong.tian-512x512.jpg",
+      "title": "",
+      "bio": "",
+      "website": "https://people.csail.mit.edu/yonglong"
     },
     {
-      "name": "Dr. John Doe",
-      "affiliation": "Research Lead, AI Lab",
-      "title": "Future Directions in ML Research",
-      "bio": "This talk will discuss emerging trends and future directions in machine learning research, highlighting key challenges and opportunities for the next generation of ML systems and applications."
+      "name": "Michael S. Ryoo",
+      "affiliation": "Stony Brook University / Salesforce Research",
+      "photo": "/program/michael.ryoo-512x512.jpg",
+      "title": "",
+      "bio": "",
+      "website": "http://michaelryoo.com"
+    },
+    {
+      "name": "Yossi Gandelsman",
+      "affiliation": "UC Berkeley",
+      "photo": "/program/yossi.gandelsman-512x512.jpg",
+      "title": "",
+      "bio": "",
+      "website": "https://yossigandelsman.github.io"
+    },
+    {
+      "name": "Francis Engelmann",
+      "affiliation": "Stanford University",
+      "photo": "/program/francis.engelmann-512x512.jpg",
+      "title": "",
+      "bio": "",
+      "website": "https://francisengelmann.github.io"
     }
   ],
   "acceptedPapers": {
