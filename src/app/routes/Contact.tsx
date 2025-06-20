@@ -31,7 +31,7 @@ function Contact() {
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
             Contact Information
           </h2>
-          <p className="text-muted-foreground">Ways to reach out to us</p>
+          {/* <p className="text-muted-foreground">Ways to reach out to us</p> */}
         </div>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {contactData.contactInfo.map((info, index) => (
@@ -153,28 +153,28 @@ function Contact() {
       </section> */}
 
       {/* FAQ */}
-      {/* <section className="space-y-6">
+      <section className="space-y-6">
         <div className="space-y-2">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
             Frequently Asked Questions
           </h2>
-          <p className="text-muted-foreground">
+          {/* <p className="text-muted-foreground">
             Common questions about contacting us
-          </p>
+          </p> */}
         </div>
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-1">
           {contactData.faq.map((item, index) => (
             <Card key={index}>
               <CardHeader>
                 <CardTitle>{item.question}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">{item.answer}</p>
+                <p className="text-l text-foreground">{item.answer}</p>
               </CardContent>
             </Card>
           ))}
         </div>
-      </section> */}
+      </section>
     </main>
   );
 }
