@@ -107,7 +107,7 @@ function CallForPapers() {
             )}
           </ul>
           <p>
-            Accepted papers will be included in the official ICCV proceedings.
+            All accepted papers will be released to the public from OpenReview.
           </p>
           <div className="flex gap-4 pt-2">
             <Button variant="outline" className="flex gap-2" asChild>

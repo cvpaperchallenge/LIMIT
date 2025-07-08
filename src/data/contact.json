@@ -50,7 +50,7 @@
   "faq": [
     {
       "question": "When will the accepted papers be made public?",
-      "answer": "All accepted papers will be released to the public at the time the CVF proceedings are published. They will not be made publicly available on OpenReview before then."
+      "answer": "All accepted papers will be released to the public from OpenReview."
     }
   ]
 }
