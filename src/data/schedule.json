@@ -25,48 +25,58 @@
   ],
   "workshopProgram": {
     "day1": {
-      "date": "TBD",
+      "date": "October 19, 2025, 1:00 PM - 6:00 PM (HST)",
       "location": "TBD",
       "schedule": [
         {
-          "time": "9:00 - 9:15",
+          "time": "13:00 - 13:10",
           "session": "Opening Remarks",
-          "presenter": "Workshop Chairs"
+          "presenter": "Hirokatsu Kataoka"
         },
         {
-          "time": "9:15 - 10:15",
-          "session": "Keynote: Advances in Machine Learning for Computer Vision",
-          "presenter": "Prof. Jane Smith"
+          "time": "13:10 - 13:40",
+          "session": "Invited Talk 1",
+          "presenter": "Yonglong Tian"
         },
         {
-          "time": "10:15 - 10:30",
+          "time": "13:40 - 14:10",
+          "session": "Invited Talk 2",
+          "presenter": "Michael S. Ryoo"
+        },
+        {
+          "time": "14:10 - 14:20",
+          "session": "Short Break",
+          "presenter": ""
+        },
+        {
+          "time": "14:20 - 14:50",
+          "session": "Invited Talk 3",
+          "presenter": "Yossi Gandelsman"
+        },
+        {
+          "time": "14:50 - 15:20",
+          "session": "Invited Talk 4",
+          "presenter": "Francis Engelmann"
+        },
+        {
+          "time": "15:20 - 15:50",
           "session": "Coffee Break",
           "presenter": ""
         },
         {
-          "time": "10:30 - 12:00",
-          "session": "Oral Session 1: Deep Learning Architectures",
-          "presenter": "Various Presenters"
-        },
-        {
-          "time": "12:00 - 13:30",
-          "session": "Lunch Break",
+          "time": "15:50 - 16:30",
+          "session": "Oral Presentations (10 min x 4)",
           "presenter": ""
         },
         {
-          "time": "13:30 - 15:00",
-          "session": "Oral Session 2: Generative Models",
-          "presenter": "Various Presenters"
+          "time": "16:30 - 16:40",
+          "session": "Closing Remarks",
+          "presenter": "Ryousuke Yamada"
         },
         {
-          "time": "15:00 - 15:30",
-          "session": "Coffee Break",
+          "time": "16:40 - 18:00",
+          "session": "Poster Session (20 posters)",
           "presenter": ""
-        },
-        {
-          "time": "15:30 - 17:00",
-          "session": "Poster Session",
-          "presenter": "All Poster Presenters"
         }
       ]
     },
