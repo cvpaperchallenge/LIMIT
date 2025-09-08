@@ -38,24 +38,36 @@
   "acceptedPapers": {
     "oral": [
       {
-        "title": "Efficient Self-Supervised Learning for Computer Vision Tasks",
-        "authors": "A. Johnson, B. Williams, C. Davis",
+        "id": 1,
+        "title": "Memory-Efficient Personalization of Text-to-Image Diffusion Models via Selective Optimization Strategies",
+        "authors": "Seokeon Choi, Sunghyun Park, Hyoungwoo Park, Jeongho Kim, Sungrack Yun",
         "links": {
           "paper": "#",
           "video": "#"
         }
       },
       {
-        "title": "Neural Rendering for 3D Scene Reconstruction",
-        "authors": "D. Miller, E. Wilson, F. Taylor",
+        "id": 2,
+        "title": "Joint Training of Image Generator and Detector for Road Defect Detection",
+        "authors": "Kuan-Chuan Peng",
         "links": {
           "paper": "#",
           "video": "#"
         }
       },
       {
-        "title": "Generative Models for Medical Image Synthesis",
-        "authors": "G. Brown, H. Martinez, I. Lee",
+        "id": 3,
+        "title": "Intraclass Compactness: A Metric for Evaluating Models Pre-Trained on Various Synthetic Data",
+        "authors": "Tomoki Suzuki, Kazuki Maeno, Yasunori Ishii, Takayoshi Yamashita",
+        "links": {
+          "paper": "#",
+          "video": "#"
+        }
+      },
+      {
+        "id": 4,
+        "title": "AutoQ-VIS: Improving Unsupervised Video Instance Segmentation via Automatic Quality Assessment",
+        "authors": "Kaixuan Lu, Mehmet Onurcan Kaya, Dim Papadopoulos",
         "links": {
           "paper": "#",
           "video": "#"
@@ -64,29 +76,129 @@
     ],
     "poster": [
       {
-        "title": "Few-Shot Learning for Object Detection",
-        "authors": "J. Smith, K. Johnson, L. Garcia",
+        "id": 5,
+        "title": "Look but Don't Touch: Gradient Informed Selection Training",
+        "authors": "David Mayo, Chris Zhang, Boris Katz, Andrei Barbu, Brian Cheung",
         "links": {
           "paper": "#"
         }
       },
       {
-        "title": "Transformer-Based Architectures for Video Understanding",
-        "authors": "M. Chen, N. Patel, O. Kim",
+        "id": 6,
+        "title": "Efficiently Generating Multidimensional Calorimeter Data with Tensor Decomposition Parameterization",
+        "authors": "Paimon Goulart, Shaan Pakala, Evangelos E. Papalexakis",
         "links": {
           "paper": "#"
         }
       },
       {
-        "title": "Efficient Neural Networks for Edge Devices",
-        "authors": "P. Wang, Q. Zhang, R. Singh",
+        "id": 7,
+        "title": "QR-LoRA: QR-Based Low-Rank Adaptation for Efficient Fine-Tuning of Large Language Models",
+        "authors": "Jessica E. Liang, Anirudh Bharadwaj",
         "links": {
           "paper": "#"
         }
       },
       {
-        "title": "Reinforcement Learning for Robotic Control",
-        "authors": "S. Thompson, T. Anderson, U. Gupta",
+        "id": 8,
+        "title": "Attn-Adapter: Attention is all you need for Online Few-shot Learner of Vision-Language Model",
+        "authors": "Phuoc-Nguyen Bui, Khanh-Binh Nguyen, Hyunseung Choo",
+        "links": {
+          "paper": "#"
+        }
+      },
+      {
+        "id": 9,
+        "title": "Cross-task knowledge distillation for few-shot detection",
+        "authors": "Louis Hémadou, Héléna Vorobieva, Ahmed Nasreddine Benaichouche, Frederic Jurie, Ewa Kijak",
+        "links": {
+          "paper": "#"
+        }
+      },
+      {
+        "id": 10,
+        "title": "NoiseCutMix: A Novel Data Augmentation Approach by Mixing Estimated Noise in Diffusion Models",
+        "authors": "Shumpei Takezaki, Ryoma Bise, Shinnosuke Matsuo",
+        "links": {
+          "paper": "#"
+        }
+      },
+      {
+        "id": 11,
+        "title": "Efficient Masked Attention Transformer for Few-Shot Classification and Segmentation",
+        "authors": "Dustin Carrión-Ojeda, Stefan Roth, Simone Schaub-Meyer",
+        "links": {
+          "paper": "#"
+        }
+      },
+      {
+        "id": 12,
+        "title": "Resource-Efficient Time-Series Forecasting of Displacement Imagery using Koopman Autoencoders",
+        "authors": "Takayuki Shinohara, Hidetaka Saomoto",
+        "links": {
+          "paper": "#"
+        }
+      },
+      {
+        "id": 13,
+        "title": "Fake & Square: Training Self-Supervised Vision Transformers with Synthetic Data and Synthetic Hard Negatives",
+        "authors": "Nikolaos Giakoumoglou, Andreas Floros, Kleanthis Marios Papadopoulos, Tania Stathaki",
+        "links": {
+          "paper": "#"
+        }
+      },
+      {
+        "id": 14,
+        "title": "Learning Video Representations without Natural Videos",
+        "authors": "Xueyang Yu, Xinlei Chen, Yossi Gandelsman",
+        "links": {
+          "paper": "#"
+        }
+      },
+      {
+        "id": 15,
+        "title": "OFASD: One-Shot Federated Anisotropic Scaling Distillation",
+        "authors": "Shunsei Koshibuchi, Hiroshi Kera, Kazuhiko Kawamoto",
+        "links": {
+          "paper": "#"
+        }
+      },
+      {
+        "id": 16,
+        "title": "Invited poster 1",
+        "authors": "TBD",
+        "links": {
+          "paper": "#"
+        }
+      },
+      {
+        "id": 17,
+        "title": "Invited poster 2",
+        "authors": "TBD",
+        "links": {
+          "paper": "#"
+        }
+      },
+      {
+        "id": 18,
+        "title": "Invited poster 3",
+        "authors": "TBD",
+        "links": {
+          "paper": "#"
+        }
+      },
+      {
+        "id": 19,
+        "title": "Invited poster 4",
+        "authors": "TBD",
+        "links": {
+          "paper": "#"
+        }
+      },
+      {
+        "id": 20,
+        "title": "Invited poster 5",
+        "authors": "TBD",
         "links": {
           "paper": "#"
         }

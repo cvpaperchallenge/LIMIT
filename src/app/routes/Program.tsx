@@ -251,6 +251,199 @@ function Program() {
         </div>
       </section> */}
 
+      {/* Important Dates Timeline */}
+      <section className="space-y-6">
+        <div className="space-y-2">
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
+            Accepted Papers
+          </h2>
+        </div>
+        <div className="relative border-border space-y-2">
+          <h3 className="text-2xl sm:text-3xl tracking-tighter">
+            Oral Presentations (15:50 - 16:30)
+          </h3>
+          <p className="text-muted-foreground">
+            Oral presenters have 10 minutes including questions. Oral presenters
+            are also required to present at the poster session.
+          </p>
+        </div>
+        <div className="relative border-border space-y-8">
+          {programData.acceptedPapers.oral.map((paper, index) => (
+            <div key={index} className="relative">
+              <div className="space-y-1">
+                <h3 className="font-semibold">
+                  {paper.id}. {paper.title}
+                </h3>
+                {/* <p className="text-muted-foreground flex items-center gap-2">
+                  <Calendar className="h-4 w-4" />
+                  {date.date}
+                </p> */}
+                <p className="text-sm">{paper.authors}</p>
+              </div>
+            </div>
+          ))}
+          {/* {scheduleData.importantDates.map((date, index) => (
+            <div key={index} className="relative">
+              <div className="space-y-1">
+                <h3 className="font-semibold">{date.title}</h3>
+                <p className="text-muted-foreground flex items-center gap-2">
+                  <Calendar className="h-4 w-4" />
+                  {date.date}
+                </p>
+                <p className="text-sm">{date.description}</p>
+              </div>
+            </div>
+          ))} */}
+        </div>
+        <div className="relative border-border space-y-2">
+          <h3 className="text-2xl sm:text-3xl tracking-tighter">
+            Poster Session (16:40 - 18:00)
+          </h3>
+          <p className="text-muted-foreground">
+            Posters will be 84&quot; x 42&quot; = 213 cm x 107cm (WxH, aspect
+            ratio 2:1, landscape format). You may use the{" "}
+            <a
+              href="https://drive.google.com/drive/u/0/folders/1hb-kDlEeu61wxAPuuHrwhvq69puqgtPS"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ICCV LOGO
+            </a>{" "}
+            on your poster.
+          </p>
+        </div>
+        <div className="relative border-border space-y-8">
+          {programData.acceptedPapers.poster.map((paper, index) => (
+            <div key={index} className="relative">
+              <div className="space-y-1">
+                <h3 className="font-semibold">
+                  {paper.id}. {paper.title}
+                </h3>
+                {/* <p className="text-muted-foreground flex items-center gap-2">
+                  <Calendar className="h-4 w-4" />
+                  {date.date}
+                </p> */}
+                <p className="text-sm">{paper.authors}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Accepted Papers */}
+      {/* <section className="space-y-6">
+        <div className="space-y-2">
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
+            Accepted Papers
+          </h2>
+          <p className="text-muted-foreground">
+            Research papers accepted for presentation at the workshop
+          </p>
+        </div>
+        <div className="flex-col justify-items-center w-full">
+          <Tabs defaultValue="oral" className="w-[90dvw] sm:w-full">
+            <TabsList className="grid w-full grid-cols-2">
+              <TabsTrigger value="oral">Oral Presentations</TabsTrigger>
+              <TabsTrigger value="poster">Poster Presentations</TabsTrigger>
+            </TabsList>
+            <TabsContent value="oral" className="space-y-4 pt-4">
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead>Paper Title</TableHead>
+                    <TableHead className="hidden md:table-cell">
+                      Authors
+                    </TableHead>
+                    <TableHead className="w-[100px]">Links</TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {programData.acceptedPapers.oral.map((paper) => (
+                    <TableRow key={paper.id}>
+                      <TableCell className="font-medium">
+                        {paper.title}
+                      </TableCell>
+                      <TableCell className="hidden md:table-cell">
+                        {paper.authors}
+                      </TableCell>
+                      <TableCell>
+                        <div className="flex gap-2">
+                          {paper.links.paper && (
+                            <Button variant="ghost" size="icon" asChild>
+                              <a
+                                href={paper.links.paper}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                <FileText className="h-4 w-4" />
+                                <span className="sr-only">Paper</span>
+                              </a>
+                            </Button>
+                          )}
+                          {paper.links.video && (
+                            <Button variant="ghost" size="icon" asChild>
+                              <a
+                                href={paper.links.video}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                <Video className="h-4 w-4" />
+                                <span className="sr-only">Video</span>
+                              </a>
+                            </Button>
+                          )}
+                        </div>
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </TabsContent>
+            <TabsContent value="poster" className="space-y-4 pt-4">
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead>Paper Title</TableHead>
+                    <TableHead className="hidden md:table-cell">
+                      Authors
+                    </TableHead>
+                    <TableHead className="w-[100px]">Links</TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {programData.acceptedPapers.poster.map((paper, index) => (
+                    <TableRow key={index}>
+                      <TableCell className="font-medium">
+                        {paper.title}
+                      </TableCell>
+                      <TableCell className="hidden md:table-cell">
+                        {paper.authors}
+                      </TableCell>
+                      <TableCell>
+                        <div className="flex gap-2">
+                          {paper.links.paper && (
+                            <Button variant="ghost" size="icon" asChild>
+                              <a
+                                href={paper.links.paper}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                <FileText className="h-4 w-4" />
+                                <span className="sr-only">Paper</span>
+                              </a>
+                            </Button>
+                          )}
+                        </div>
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </TabsContent>
+          </Tabs>
+        </div>
+      </section> */}
+
       {/* Panel Discussion */}
       {/* <section className="space-y-6">
         <div className="space-y-2">
