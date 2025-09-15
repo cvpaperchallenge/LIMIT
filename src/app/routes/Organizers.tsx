@@ -24,7 +24,7 @@ function Organizers() {
         </p> */}
       </section>
 
-      {/* General Chairs */}
+      {/* Organizers */}
       <section className="space-y-6">
         <div className="space-y-2">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
@@ -185,18 +185,18 @@ function Organizers() {
         </div>
       </section> */}
 
-      {/* Program Committee */}
-      {/* <section className="space-y-6">
+      {/* Reviewers */}
+      <section className="space-y-6">
         <div className="space-y-2">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
-            Program Committee
+            Reviewers
           </h2>
-          <p className="text-muted-foreground">
+          {/* <p className="text-muted-foreground">
             Paper reviewers and session chairs
-          </p>
+          </p> */}
         </div>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {organizersData.programCommittee.map((member, index) => (
+          {organizersData.reviewers.map((member, index) => (
             <div key={index} className="p-4 border rounded-lg">
               <p className="font-medium">{member.name}</p>
               <p className="text-sm text-muted-foreground">
@@ -205,7 +205,7 @@ function Organizers() {
             </div>
           ))}
         </div>
-      </section> */}
+      </section>
 
       {/* Sponsors */}
       <section className="space-y-6">

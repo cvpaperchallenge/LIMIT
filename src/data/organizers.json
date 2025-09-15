@@ -112,42 +112,14 @@
       "website": "#"
     }
   ],
-  "programCommittee": [
+  "reviewers": [
     {
-      "name": "Dr. Amanda Brown",
-      "affiliation": "Google Research"
+      "name": "Amir El-Ghoussani",
+      "affiliation": "Eindhoven University of Technology"
     },
     {
-      "name": "Prof. James Wilson",
-      "affiliation": "UC Berkeley"
-    },
-    {
-      "name": "Dr. Lisa Chen",
-      "affiliation": "Microsoft Research"
-    },
-    {
-      "name": "Prof. Thomas Garcia",
-      "affiliation": "University of Cambridge"
-    },
-    {
-      "name": "Dr. Sophia Kim",
-      "affiliation": "Samsung AI"
-    },
-    {
-      "name": "Prof. Mark Johnson",
-      "affiliation": "University of Toronto"
-    },
-    {
-      "name": "Dr. Rachel Singh",
-      "affiliation": "NVIDIA Research"
-    },
-    {
-      "name": "Prof. Daniel Wang",
-      "affiliation": "Tsinghua University"
-    },
-    {
-      "name": "Dr. Olivia Martinez",
-      "affiliation": "Apple AI"
+      "name": "Ahmed S. Abdelrahman",
+      "affiliation": "University of Central Florida"
     }
   ],
   "sponsors": [
