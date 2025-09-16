@@ -262,7 +262,7 @@ function Program() {
           <h3 className="text-2xl sm:text-3xl tracking-tighter">
             Oral Presentations (15:50 - 16:30)
           </h3>
-          <p className="text-muted-foreground">
+          <p className="">
             Oral presenters have 10 minutes including questions. Oral presenters
             are also required to present at the poster session.
           </p>
@@ -299,17 +299,27 @@ function Program() {
           <h3 className="text-2xl sm:text-3xl tracking-tighter">
             Poster Session (16:40 - 18:00)
           </h3>
-          <p className="text-muted-foreground">
+          <p className="">
             Posters will be 84&quot; x 42&quot; = 213 cm x 107cm (WxH, aspect
             ratio 2:1, landscape format). You may use the{" "}
             <a
               href="https://drive.google.com/drive/u/0/folders/1hb-kDlEeu61wxAPuuHrwhvq69puqgtPS"
               target="_blank"
               rel="noopener noreferrer"
+              className="underline hover:text-primary"
             >
               ICCV LOGO
             </a>{" "}
-            on your poster.
+            on your poster. Refer from:{" "}
+            <a
+              href="https://iccv.thecvf.com/Conferences/2025/PosterPrinting"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-primary"
+            >
+              ICCV official website
+            </a>
+            .
           </p>
         </div>
         <div className="relative border-border space-y-8">
