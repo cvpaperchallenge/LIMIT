@@ -10,6 +10,17 @@ import {
   CardTitle,
 } from "../../components/ui/card";
 import organizersData from "../../data/organizers.json";
+import type { Route } from "./+types/Organizers";
+import { buildMeta } from "@/lib/seo";
+
+export const meta: Route.MetaFunction = () =>
+  buildMeta({
+    title: "Organizers | LIMIT Workshop @ ICCV 2025",
+    description:
+      "Meet the organizing committee, program chairs, web chair, and reviewers supporting the ICCV 2025 LIMIT Workshop on resource-constrained representation learning.",
+    path: "/organizers",
+    keywords: ["organizing committee", "program chairs", "reviewers"],
+  });
 
 function Organizers() {
   return (

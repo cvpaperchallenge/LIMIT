@@ -1,7 +1,7 @@
-import { Link } from "react-router";
-import { Download } from "lucide-react";
 import { Calendar } from "lucide-react";
+import { Download } from "lucide-react";
 import { ExternalLink } from "lucide-react";
+import { Link } from "react-router";
 
 import { Button } from "../../components/ui/button";
 // import {
@@ -12,6 +12,21 @@ import { Button } from "../../components/ui/button";
 // } from "../../components/ui/accordion";
 import callForPapersData from "../../data/callForPapers.json";
 import scheduleData from "../../data/schedule.json";
+import type { Route } from "./+types/CallForPapers";
+import { buildMeta } from "@/lib/seo";
+
+export const meta: Route.MetaFunction = () =>
+  buildMeta({
+    title: "Call for Papers | LIMIT Workshop @ ICCV 2025",
+    description:
+      "Review topics, submission guidelines, and deadlines for the LIMIT Workshop call for papers at ICCV 2025. Submit via OpenReview and compete for best paper honors.",
+    path: "/call-for-papers",
+    keywords: [
+      "call for papers",
+      "OpenReview submissions",
+      "ICCV 2025 workshop deadlines",
+    ],
+  });
 
 function CallForPapers() {
   return (

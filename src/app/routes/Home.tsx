@@ -1,9 +1,25 @@
-import { Link } from "react-router";
 import { Calendar, MapPin } from "lucide-react";
+import { Link } from "react-router";
 
 import { Button } from "../../components/ui/button";
 import homeData from "../../data/home.json";
 import scheduleData from "../../data/schedule.json";
+import type { Route } from "./+types/Home";
+import { buildMeta } from "@/lib/seo";
+
+export const meta: Route.MetaFunction = () =>
+  buildMeta({
+    title:
+      "LIMIT Workshop @ ICCV 2025 | Representation Learning with Limited Resources",
+    description:
+      "LIMIT Workshop at ICCV 2025 spotlights resource-efficient representation learning. Join us on October 19 in Honolulu for keynotes, paper presentations, and community updates.",
+    path: "/",
+    keywords: [
+      "ICCV workshop 2025",
+      "resource-efficient vision",
+      "limited data learning",
+    ],
+  });
 
 function Home() {
   return (
