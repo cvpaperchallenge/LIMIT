@@ -11,6 +11,17 @@ import {
 // import { Label } from "../../components/ui/label";
 // import { Textarea } from "../../components/ui/textarea";
 import contactData from "../../data/contact.json";
+import type { Route } from "./+types/Contact";
+import { buildMeta } from "@/lib/seo";
+
+export const meta: Route.MetaFunction = () =>
+  buildMeta({
+    title: "Contact | LIMIT Workshop @ ICCV 2025",
+    description:
+      "Get in touch with the ICCV 2025 LIMIT Workshop team via email, venue information, and Slack, and review answers to frequently asked questions.",
+    path: "/contact",
+    keywords: ["contact information", "email", "workshop questions"],
+  });
 
 function Contact() {
   return (
