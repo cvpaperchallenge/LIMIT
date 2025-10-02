@@ -1,5 +1,4 @@
-import { Calendar, MapPin } from "lucide-react";
-import { ExternalLink } from "lucide-react";
+import { Calendar, MapPin, ExternalLink, FileText } from "lucide-react";
 
 import {
   Table,
@@ -266,7 +265,16 @@ function Program() {
       <section className="space-y-6">
         <div className="space-y-2">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
-            Accepted Papers
+            Accepted Papers [
+            <a
+              href="https://openreview.net/group?id=thecvf.com/ICCV/2025/Workshop/LIMIT"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-primary"
+            >
+              Link
+            </a>
+            ]{" "}
           </h2>
         </div>
         <div className="relative border-border space-y-2">
@@ -282,9 +290,22 @@ function Program() {
           {programData.acceptedPapers.oral.map((paper, index) => (
             <div key={index} className="relative">
               <div className="space-y-1">
-                <h3 className="font-semibold">
-                  {paper.id}. {paper.title}
-                </h3>
+                <div className="flex items-start gap-2">
+                  <h3 className="font-semibold">
+                    {paper.id}. {paper.title}
+                  </h3>
+                  {paper.links?.paper && (
+                    <a
+                      href={paper.links.paper}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-1 text-primary hover:text-primary/80"
+                      aria-label={`Open PDF for ${paper.title}`}
+                    >
+                      <FileText className="h-4 w-4" />
+                    </a>
+                  )}
+                </div>
                 {/* <p className="text-muted-foreground flex items-center gap-2">
                   <Calendar className="h-4 w-4" />
                   {date.date}
@@ -337,9 +358,22 @@ function Program() {
           {programData.acceptedPapers.poster.map((paper, index) => (
             <div key={index} className="relative">
               <div className="space-y-1">
-                <h3 className="font-semibold">
-                  {paper.id}. {paper.title}
-                </h3>
+                <div className="flex items-start gap-2">
+                  <h3 className="font-semibold">
+                    {paper.id}. {paper.title}
+                  </h3>
+                  {paper.links?.paper && (
+                    <a
+                      href={paper.links.paper}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-1 text-primary hover:text-primary/80"
+                      aria-label={`Open PDF for ${paper.title}`}
+                    >
+                      <FileText className="h-4 w-4" />
+                    </a>
+                  )}
+                </div>
                 {/* <p className="text-muted-foreground flex items-center gap-2">
                   <Calendar className="h-4 w-4" />
                   {date.date}
