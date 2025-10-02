@@ -26,7 +26,7 @@
   "workshopProgram": {
     "day1": {
       "date": "October 19, 2025, 1:00 PM - 6:00 PM (HST)",
-      "location": "TBD",
+      "location": "Hawaii Convention Center 306 A",
       "schedule": [
         {
           "time": "13:00 - 13:10",
@@ -82,7 +82,7 @@
     },
     "day2": {
       "date": "October 16, 2025",
-      "location": "Room A3, Convention Center",
+      "location": "Hawaii Convention Center 306 A",
       "schedule": []
     }
   },
