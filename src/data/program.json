@@ -169,34 +169,34 @@
       },
       {
         "id": 17,
-        "title": "Invited poster 2",
-        "authors": "TBD",
+        "title": "Unified Category-Level Object Detection and Pose Estimation from RGB Images using 3D Prototypes",
+        "authors": "Tom Fischer, Xiaojie Zhang, Eddy Ilg",
         "links": {
-          "paper": ""
+          "paper": "https://arxiv.org/abs/2508.02157"
         }
       },
       {
         "id": 18,
-        "title": "Invited poster 3",
-        "authors": "TBD",
+        "title": "DACoN: DINO for Anime Paint Bucket Colorization with Any Number of Reference Images",
+        "authors": "Kazuma Nagata, Naoshi Kaneko",
         "links": {
-          "paper": ""
+          "paper": "https://arxiv.org/abs/2509.14685"
         }
       },
       {
         "id": 19,
-        "title": "Invited poster 4",
-        "authors": "TBD",
+        "title": "Industrial Synthetic Segment Pre-training",
+        "authors": "Shinichi Mae, Ryousuke Yamada, Hirokatsu Kataoka",
         "links": {
-          "paper": ""
+          "paper": "https://arxiv.org/abs/2505.13099"
         }
       },
       {
         "id": 20,
-        "title": "Invited poster 5",
-        "authors": "TBD",
+        "title": "TWIST & SCOUT: Grounding Multimodal LLM-Experts by Forget-Free Tuning",
+        "authors": "Aritra Bhowmik, Mohammad Mahdi Derakhshani, Dennis Koelma, Yuki M. Asano, Martin R. Oswald, Cees G. M. Snoek",
         "links": {
-          "paper": ""
+          "paper": "https://arxiv.org/abs/2410.10491"
         }
       }
     ]
