@@ -176,8 +176,8 @@
       },
       {
         "id": 16,
-        "title": "Invited poster 1",
-        "authors": "NeurIPS 2025 accepted paper",
+        "title": "Forgetting Visual Domains in Vision-Language Models",
+        "authors": "Yuta Goto, Kodai Kawamura, Rintaro Yanagi, Hirokatsu Kataoka, Go Irie",
         "posterBoard": 78,
         "links": {
           "paper": ""
