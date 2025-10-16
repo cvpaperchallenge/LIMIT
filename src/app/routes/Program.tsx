@@ -305,6 +305,11 @@ function Program() {
                       <FileText className="h-4 w-4" />
                     </a>
                   )}
+                  {paper.posterBoard && (
+                    <span className="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+                      Poster Board {paper.posterBoard}
+                    </span>
+                  )}
                 </div>
                 {/* <p className="text-muted-foreground flex items-center gap-2">
                   <Calendar className="h-4 w-4" />
@@ -351,7 +356,8 @@ function Program() {
             >
               ICCV official website
             </a>
-            .
+            . Please display your poster on the assigned poster board number in{" "}
+            <span className="font-semibold">Exhibit Hall II</span>.
           </p>
         </div>
         <div className="relative border-border space-y-8">
@@ -372,6 +378,11 @@ function Program() {
                     >
                       <FileText className="h-4 w-4" />
                     </a>
+                  )}
+                  {paper.posterBoard && (
+                    <span className="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+                      Poster Board {paper.posterBoard}
+                    </span>
                   )}
                 </div>
                 {/* <p className="text-muted-foreground flex items-center gap-2">
