@@ -203,11 +203,11 @@
       },
       {
         "id": 19,
-        "title": "Industrial Synthetic Segment Pre-training",
-        "authors": "Shinichi Mae, Ryousuke Yamada, Hirokatsu Kataoka",
+        "title": "DINOv3",
+        "authors": "Oriane Siméoni, et al.",
         "posterBoard": 81,
         "links": {
-          "paper": "https://arxiv.org/abs/2505.13099"
+          "paper": "https://arxiv.org/abs/2508.10104"
         }
       },
       {
@@ -217,6 +217,15 @@
         "posterBoard": 82,
         "links": {
           "paper": "https://arxiv.org/abs/2410.10491"
+        }
+      },
+      {
+        "id": 21,
+        "title": "Industrial Synthetic Segment Pre-training",
+        "authors": "Shinichi Mae, Ryousuke Yamada, Hirokatsu Kataoka",
+        "posterBoard": "",
+        "links": {
+          "paper": "https://arxiv.org/abs/2505.13099"
         }
       }
     ]
