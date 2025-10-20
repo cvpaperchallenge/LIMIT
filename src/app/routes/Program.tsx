@@ -80,6 +80,7 @@ function Program() {
                 <TableHead className="hidden md:table-cell">
                   Presenter
                 </TableHead>
+                <TableHead className="hidden md:table-cell w-[140px]"></TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
@@ -88,7 +89,19 @@ function Program() {
                   <TableCell className="font-medium">{item.time}</TableCell>
                   <TableCell>{item.session}</TableCell>
                   <TableCell className="hidden md:table-cell">
-                    {item.presenter}
+                    {item.presenter || ""}
+                  </TableCell>
+                  <TableCell className="hidden md:table-cell">
+                    {item.slides ? (
+                      <Button variant="ghost" size="sm" asChild>
+                        <a href={item.slides} target="_blank" rel="noreferrer">
+                          <FileText className="mr-2 h-4 w-4" />
+                          Slides
+                        </a>
+                      </Button>
+                    ) : (
+                      <span className="text-muted-foreground text-sm"></span>
+                    )}
                   </TableCell>
                 </TableRow>
               ))}
