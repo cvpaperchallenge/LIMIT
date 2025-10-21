@@ -33,7 +33,7 @@ function Home() {
           <div className="flex flex-col items-center gap-3 text-xs font-medium uppercase tracking-[0.35em] text-muted-foreground">
             <span>held as part of</span>
             <div className="flex flex-wrap items-center justify-center gap-4 rounded-full border bg-background/90 px-6 py-3 shadow-sm backdrop-blur">
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 -mx-2">
                 <img
                   src="/limit-logo-black-wide.png"
                   alt="LIMIT Workshop logo"
@@ -48,7 +48,7 @@ function Home() {
               <span className="text-sm tracking-normal text-muted-foreground">
                 at
               </span>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 pr-4">
                 <img
                   src="/iccv-logo-black.png"
                   alt="ICCV 2025 logo"
