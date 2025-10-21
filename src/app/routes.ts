@@ -11,6 +11,7 @@ export default [
     route("/call-for-papers", "./routes/CallForPapers.tsx"),
     // route("/schedule", "./routes/Schedule.tsx"),
     route("/program", "./routes/Program.tsx"),
+    route("/awards", "./routes/Awards.tsx"),
     route("/organizers", "./routes/Organizers.tsx"),
     // route("/past-events", "./routes/PastEvents.tsx"),
     route("/contact", "./routes/Contact.tsx"),

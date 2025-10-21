@@ -138,6 +138,18 @@ export function Footer() {
             Program
           </Link>
           <Link
+            to="/awards"
+            className="text-sm text-muted-foreground hover:text-foreground"
+          >
+            Awards
+          </Link>
+          <Link
+            to="/organizers"
+            className="text-sm text-muted-foreground hover:text-foreground"
+          >
+            Organizers
+          </Link>
+          <Link
             to="/contact"
             className="text-sm text-muted-foreground hover:text-foreground"
           >
