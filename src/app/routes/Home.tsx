@@ -25,30 +25,67 @@ function Home() {
   return (
     <main className="container px-6 py-8 space-y-16 xl:w-6xl">
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center text-center space-y-6 py-12">
-        <div className="space-y-2">
-          <h1 className="text-4xl tracking-tighter sm:text-5xl md:text-6xl">
-            {homeData.title}
-          </h1>
-          <p className="text-xl text-muted-foreground">{homeData.subtitle}</p>
+      <section className="relative overflow-hidden rounded-3xl border bg-gradient-to-br from-primary/10 via-background to-background px-6 py-16 text-center shadow-lg">
+        <div className="pointer-events-none absolute inset-0 -z-10">
+          <div className="h-full w-full bg-gradient-to-b from-primary/20 via-transparent to-transparent dark:from-primary/30" />
         </div>
-        <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-          <div className="flex items-center gap-2">
-            <Calendar className="h-5 w-5 text-primary" />
-            <span>{homeData.eventInfo.date}</span>
+        <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center gap-10">
+          <div className="flex flex-col items-center gap-3 text-xs font-medium uppercase tracking-[0.35em] text-muted-foreground">
+            <span>held as part of</span>
+            <div className="flex flex-wrap items-center justify-center gap-4 rounded-full border bg-background/90 px-6 py-3 shadow-sm backdrop-blur">
+              <div className="flex items-center gap-3">
+                <img
+                  src="/limit-logo-black-wide.png"
+                  alt="LIMIT Workshop logo"
+                  className="h-14 dark:hidden"
+                />
+                <img
+                  src="/limit-logo-white-wide.png"
+                  alt="LIMIT Workshop logo"
+                  className="hidden h-14 dark:block"
+                />
+              </div>
+              <span className="text-sm tracking-normal text-muted-foreground">
+                at
+              </span>
+              <div className="flex items-center gap-3">
+                <img
+                  src="/iccv-logo-black.png"
+                  alt="ICCV 2025 logo"
+                  className="h-10 dark:hidden"
+                />
+                <img
+                  src="/iccv-logo-white.png"
+                  alt="ICCV 2025 logo"
+                  className="hidden h-10 dark:block"
+                />
+              </div>
+            </div>
           </div>
-          <div className="flex items-center gap-2">
-            <MapPin className="h-5 w-5 text-primary" />
-            <span>{homeData.eventInfo.location}</span>
+          <div className="space-y-4">
+            <h1 className="text-4xl tracking-tighter sm:text-5xl md:text-6xl">
+              {homeData.title}
+            </h1>
+            <p className="text-xl text-muted-foreground">{homeData.subtitle}</p>
           </div>
-        </div>
-        <div className="flex flex-col sm:flex-row gap-4">
-          <Button asChild size="lg">
-            <Link to="/call-for-papers">Submit Paper</Link>
-          </Button>
-          <Button variant="outline" size="lg" asChild>
-            <Link to="/program">Check Program</Link>
-          </Button>
+          <div className="flex flex-col items-center justify-center gap-4 text-sm sm:flex-row sm:text-base">
+            <div className="flex items-center gap-2">
+              <Calendar className="h-5 w-5 text-primary" />
+              <span>{homeData.eventInfo.date}</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <MapPin className="h-5 w-5 text-primary" />
+              <span>{homeData.eventInfo.location}</span>
+            </div>
+          </div>
+          <div className="flex flex-col gap-4 sm:flex-row">
+            <Button asChild size="lg">
+              <Link to="/call-for-papers">Submit Paper</Link>
+            </Button>
+            <Button variant="outline" size="lg" asChild>
+              <Link to="/program">Check Program</Link>
+            </Button>
+          </div>
         </div>
       </section>
 
