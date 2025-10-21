@@ -56,7 +56,18 @@ function Awards() {
                   <span>{award.category}</span>
                 </div> */}
                 <CardTitle className="text-xl leading-tight">
-                  {award.paperTitle}
+                  {award.paperLink ? (
+                    <a
+                      href={award.paperLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary"
+                    >
+                      {award.paperTitle}
+                    </a>
+                  ) : (
+                    award.paperTitle
+                  )}
                 </CardTitle>
                 <CardDescription className="text-base sm:text-md">
                   {award.authors}
