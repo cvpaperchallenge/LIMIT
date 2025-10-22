@@ -85,7 +85,36 @@ function Awards() {
                     <ExternalLink className="ml-2 h-3 w-3" />
                   </a>
                 </Button> */}
-                <div className="flex justify-center w-full">
+                <div className="flex flex-wrap items-center justify-center gap-4 rounded-full border bg-background/90 px-6 py-3 shadow-sm backdrop-blur">
+                  <div className="flex items-center gap-3 -mx-2">
+                    <img
+                      src="/limit-logo-black-wide.png"
+                      alt="LIMIT Workshop logo"
+                      className="h-18 dark:hidden"
+                    />
+                    <img
+                      src="/limit-logo-white-wide.png"
+                      alt="LIMIT Workshop logo"
+                      className="hidden h-18 dark:block"
+                    />
+                  </div>
+                  <span className="text-md tracking-normal text-muted-foreground">
+                    AT
+                  </span>
+                  <div className="flex items-center gap-3 pr-4">
+                    <img
+                      src="/iccv-logo-black.png"
+                      alt="ICCV 2025 logo"
+                      className="h-10 dark:hidden"
+                    />
+                    <img
+                      src="/iccv-logo-white.png"
+                      alt="ICCV 2025 logo"
+                      className="hidden h-10 dark:block"
+                    />
+                  </div>
+                </div>
+                {/* <div className="flex justify-center w-full">
                   <img
                     src="/limit-logo-black-wide.png"
                     alt="LIMIT Workshop logo"
@@ -98,7 +127,7 @@ function Awards() {
                     className="h-30 w-auto hidden dark:block"
                     loading="lazy"
                   />
-                </div>
+                </div> */}
               </CardFooter>
             </Card>
           ))}
